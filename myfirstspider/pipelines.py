@@ -19,6 +19,7 @@ class MyfirstspiderPipeline(object):
         if item:
             line = json.dumps(dict(item)) + "\n"
             print line
+            # 这里将一行文件写入本地文件
             self.file.write(line.decode('unicode_escape'))
             # item['brand'] = item['brand'][0].decode('UTF-8')
             # self.file.write(dict(item).__str__() + "\n");
